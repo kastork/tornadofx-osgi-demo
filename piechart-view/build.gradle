@@ -1,0 +1,52 @@
+buildscript {
+	ext.kotlin_version = '1.1.2-5'
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+	}
+}
+
+apply plugin: "osgi"
+apply plugin: 'kotlin'
+apply plugin: 'com.athaydes.osgi-ds'
+
+group = 'net.kirkstork.examples'
+version = '1.0-SNAPSHOT'
+description = "piechart-view"
+
+repositories {
+	mavenLocal()
+	jcenter()
+	maven {url "http://repo.maven.apache.org/maven2"}
+}
+
+dependencies {
+	provided "no.tornado:tornadofx:$tornadofx_version"
+	provided "org.osgi:org.osgi.service.component.annotations:1.3.0"
+//	compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+//	provided "org.jetbrains.kotlin:kotlin-osgi-bundle:$kotlin_version"
+}
+
+jar {
+	manifest {
+		instruction '-dsannotations', '*'
+		instruction 'Import-Package', 'sun.net.www.protocol.css, tornadofx,com.sun.javafx.scene.control.behavior,com.sun.javafx.scene.control.skin,javafx.animation,javafx.application,javafx.beans,javafx.beans.binding,javafx.beans.property,javafx.beans.value,javafx.collections,javafx.collections.transformation,javafx.concurrent,javafx.css,javafx.event,javafx.fxml,javafx.geometry,javafx.scene,javafx.scene.canvas,javafx.scene.chart,javafx.scene.control,javafx.scene.effect,javafx.scene.image,javafx.scene.input,javafx.scene.layout,javafx.scene.paint,javafx.scene.shape,javafx.scene.text,javafx.scene.web,javafx.stage,javafx.util,javax.json,kotlin.collections,kotlin.jvm,kotlin.jvm.functions,kotlin.jvm.internal,kotlin.properties,kotlin.reflect,kotlin.text,org.apache.http.client.methods,org.apache.http.client.protocol,org.apache.http.impl.client,tornadofx.osgi,kotlin,org.osgi.framework'
+	}
+}
+
+declarativeServices {
+	declarations {
+		component(name: 'piechart-view'){
+			implementation('class': 'net.kirkstork.examples.piechartview.ViewRegistration')
+			service {
+				provide('interface': 'tornadofx.osgi.ViewProvider')
+			}
+		}
+	}
+
+	// uncomment to print the generated XML file when building
+//	 show()
+}
+

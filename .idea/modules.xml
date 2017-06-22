@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/piechart-view/piechart-view.iml" filepath="$PROJECT_DIR$/.idea/modules/piechart-view/piechart-view.iml" group="piechart-view" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/piechart-view/piechart-view_main.iml" filepath="$PROJECT_DIR$/.idea/modules/piechart-view/piechart-view_main.iml" group="piechart-view" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/piechart-view/piechart-view_test.iml" filepath="$PROJECT_DIR$/.idea/modules/piechart-view/piechart-view_test.iml" group="piechart-view" />
+      <module fileurl="file://$PROJECT_DIR$/tornadofx-osgi-demo.iml" filepath="$PROJECT_DIR$/tornadofx-osgi-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tornadofx-osgi-demo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/tornadofx-osgi-demo_main.iml" group="tornadofx-osgi-demo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tornadofx-osgi-demo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/tornadofx-osgi-demo_test.iml" group="tornadofx-osgi-demo" />
+    </modules>
+  </component>
+</project>

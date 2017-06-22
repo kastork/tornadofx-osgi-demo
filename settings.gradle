@@ -1,0 +1,3 @@
+rootProject.name = 'tornadofx-osgi-demo'
+include 'dashboard-app'
+include 'piechart-view'

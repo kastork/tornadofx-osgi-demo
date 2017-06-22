@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: no.tornado:tornadofx:1.7.8-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/no/tornado/tornadofx/1.7.8-SNAPSHOT/tornadofx-1.7.8-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/no/tornado/tornadofx/1.7.8-SNAPSHOT/tornadofx-1.7.8-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

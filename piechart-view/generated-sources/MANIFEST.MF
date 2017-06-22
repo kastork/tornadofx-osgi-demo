@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Export-Package: net.kirkstork.issues;version="0.0.0.SNAPSHOT";uses:="j
+ avafx.scene,javafx.scene.layout,kotlin,kotlin.jvm.internal,kotlin.ref
+ lect,tornadofx,tornadofx.osgi"
+Bundle-SymbolicName: net.kirkstork.issues.app
+Bundle-Version: 0.0.0.SNAPSHOT
+Bundle-Name: app
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1497526910000
+Import-Package: tornadofx;version="[1.7,2)",javafx.event,javafx.geomet
+ ry,javafx.scene,javafx.scene.control,javafx.scene.layout,kotlin.jvm.f
+ unctions,kotlin.jvm.internal,kotlin.reflect,tornadofx.osgi;version="[
+ 1.7,2)",kotlin,sun.net.www.protocol.css;version="[1.7,2)",com.sun.jav
+ afx.scene.control.behavior,com.sun.javafx.scene.control.skin,javafx.a
+ nimation,javafx.application,javafx.beans,javafx.beans.binding,javafx.
+ beans.property,javafx.beans.value,javafx.collections,javafx.collectio
+ ns.transformation,javafx.concurrent,javafx.css,javafx.fxml,javafx.sce
+ ne.canvas,javafx.scene.chart,javafx.scene.effect,javafx.scene.image,j
+ avafx.scene.input,javafx.scene.paint,javafx.scene.shape,javafx.scene.
+ text,javafx.scene.web,javafx.stage,javafx.util,javax.json;version="[1
+ .0,2)",kotlin.collections,kotlin.jvm,kotlin.properties,kotlin.text,or
+ g.apache.http.client.methods,org.apache.http.client.protocol,org.apac
+ he.http.impl.client,org.osgi.framework;version="[1.8,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Created-By: 1.8.0_131 (Oracle Corporation)
+Tool: Bnd-3.2.0.201605172007
+Service-Component: OSGI-INF/ds.xml

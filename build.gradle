@@ -1,0 +1,79 @@
+buildscript {
+	ext.kotlin_version = '1.1.2-5'
+	ext.tornadofx_version = '1.7.8-SNAPSHOT'
+	dependencies {
+//		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+	}
+	repositories {
+		mavenLocal()
+		mavenCentral()
+		jcenter()
+	}
+}
+
+plugins {
+//	id "org.dm.bundle" version "0.10.0"
+	id "com.athaydes.osgi-run" version "1.5.4"
+	id "org.jetbrains.kotlin.jvm" version "1.1.2"
+}
+
+group = 'net.kirkstork.examples'
+version = '1.0-SNAPSHOT'
+description = "tornadofx-osgi"
+
+repositories {
+	mavenLocal()
+	mavenCentral()
+	jcenter()
+	maven {url "http://repo.maven.apache.org/maven2"}
+}
+
+subprojects {
+	sourceCompatibility = 1.8
+	targetCompatibility = 1.8
+	compileKotlin {
+		kotlinOptions.jvmTarget = '1.8'
+	}
+	configurations {
+		provided {
+			dependencies.all {dep ->
+				configurations.default.exclude group: dep.group, module: dep.name
+			}
+		}
+		compile.extendsFrom provided
+	}
+}
+
+dependencies {
+	osgiRuntime("no.tornado:tornadofx:$tornadofx_version") {
+		exclude group: "org.jetbrains.kotlin"
+	}
+	osgiRuntime "org.jetbrains.kotlin:kotlin-osgi-bundle:$kotlin_version"
+	osgiRuntime 'org.apache.felix:org.apache.felix.scr:2.0.10', {transitive = false}
+	osgiRuntime 'no.tornado:javafx-osgi:8.0.1'
+	osgiRuntime 'org.apache.httpcomponents:httpcore-osgi:4.4.6'
+	osgiRuntime 'org.apache.httpcomponents:httpclient-osgi:4.5.3'
+	osgiRuntime 'org.apache.felix:org.apache.felix.configadmin:1.8.14'
+	osgiRuntime 'org.glassfish:javax.json:1.0.4'
+}
+
+runOsgi {
+	bundles += subprojects
+
+	config += [
+			'org.osgi.framework.storage.clean'        : 'true',
+			'org.osgi.framework.system.packages.extra': 'javafx,tornadofx.osgi,com.sun.deploy.uitoolkit.impl.fx,com.sun.deploy.uitoolkit.impl.fx.ui'
+	]
+	wrapInstructions {
+		manifest(/commons-logging.*/) {
+			instruction 'Import-Package', '!javax.servlet,!org.apache.*,*'
+		}
+		manifest(/httpclient-cache.*/) {
+			instruction 'Import-Package', '!net.sf.*,!org.slf4j.*,!net.spy.memcached,*'
+		}
+	}
+}
+
+
+
+

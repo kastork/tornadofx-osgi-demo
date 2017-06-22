@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":piechart-view:main" external.linked.project.path="$MODULE_DIR$/../../../piechart-view" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="net.kirkstork.examples" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" useProjectSettings="false">
+        <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/../../../piechart-view/build/kotlin-classes/main" />
+          <option name="classpath" value="$MAVEN_REPOSITORY$/no/tornado/tornadofx/1.7.8-SNAPSHOT/tornadofx-1.7.8-SNAPSHOT.jar:/Users/kirk/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.service.component.annotations/1.3.0/ef17ec0e7f73cd144599da108d72a24285d1f5d5/org.osgi.service.component.annotations-1.3.0.jar:/Users/kirk/.m2/repository/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar:/Users/kirk/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jre8/1.1.2-5/kotlin-stdlib-jre8-1.1.2-5.jar:/Users/kirk/.m2/repository/org/jetbrains/kotlin/kotlin-reflect/1.1.2-5/kotlin-reflect-1.1.2-5.jar:/Users/kirk/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jre7/1.1.2-5/kotlin-stdlib-jre7-1.1.2-5.jar:/Users/kirk/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.1.2-5/kotlin-stdlib-1.1.2-5.jar:/Users/kirk/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="piechart-view_main" />
+          <option name="addCompilerBuiltIns" value="true" />
+          <option name="loadBuiltInsFromDependencies" value="true" />
+          <option name="languageVersion" value="1.1" />
+          <option name="apiVersion" value="1.1" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../piechart-view/build/classes/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../piechart-view/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../piechart-view/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../piechart-view/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../piechart-view/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Gradle: no.tornado:tornadofx:1.7.8-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Gradle: org.osgi:org.osgi.service.component.annotations:1.3.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.glassfish:javax.json:1.0.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre8:1.1.2-5" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-reflect:1.1.2-5" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jre7:1.1.2-5" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.1.2-5" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+  </component>
+</module>
