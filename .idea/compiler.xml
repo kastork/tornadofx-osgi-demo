@@ -12,8 +12,12 @@
       <entry name="!?*.clj" />
     </wildcardResourcePatterns>
     <bytecodeTargetLevel>
+      <module name="barchart-view_main" target="1.8" />
+      <module name="barchart-view_test" target="1.8" />
       <module name="chart-app_main" target="1.8" />
       <module name="chart-app_test" target="1.8" />
+      <module name="dashboard-app_main" target="1.8" />
+      <module name="dashboard-app_test" target="1.8" />
       <module name="piechart-view_main" target="1.8" />
       <module name="piechart-view_test" target="1.8" />
       <module name="tornadofx-osgi-demo_main" target="1.8" />

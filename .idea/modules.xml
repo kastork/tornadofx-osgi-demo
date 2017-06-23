@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/barchart-view/barchart-view.iml" filepath="$PROJECT_DIR$/.idea/modules/barchart-view/barchart-view.iml" group="barchart-view" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/barchart-view/barchart-view_main.iml" filepath="$PROJECT_DIR$/.idea/modules/barchart-view/barchart-view_main.iml" group="barchart-view" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/barchart-view/barchart-view_test.iml" filepath="$PROJECT_DIR$/.idea/modules/barchart-view/barchart-view_test.iml" group="barchart-view" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dashboard-app/dashboard-app.iml" filepath="$PROJECT_DIR$/.idea/modules/dashboard-app/dashboard-app.iml" group="dashboard-app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dashboard-app/dashboard-app_main.iml" filepath="$PROJECT_DIR$/.idea/modules/dashboard-app/dashboard-app_main.iml" group="dashboard-app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dashboard-app/dashboard-app_test.iml" filepath="$PROJECT_DIR$/.idea/modules/dashboard-app/dashboard-app_test.iml" group="dashboard-app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/piechart-view/piechart-view.iml" filepath="$PROJECT_DIR$/.idea/modules/piechart-view/piechart-view.iml" group="piechart-view" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/piechart-view/piechart-view_main.iml" filepath="$PROJECT_DIR$/.idea/modules/piechart-view/piechart-view_main.iml" group="piechart-view" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/piechart-view/piechart-view_test.iml" filepath="$PROJECT_DIR$/.idea/modules/piechart-view/piechart-view_test.iml" group="piechart-view" />

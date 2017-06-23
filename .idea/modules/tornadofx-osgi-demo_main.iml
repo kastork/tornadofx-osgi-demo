@@ -6,7 +6,7 @@
         <compilerSettings />
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/../../build/kotlin-classes/main" />
-          <option name="classpath" value="$MAVEN_REPOSITORY$/no/tornado/tornadofx/1.7.8-SNAPSHOT/tornadofx-1.7.8-SNAPSHOT.jar:/Users/kirk/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-osgi-bundle/1.1.2-5/3d90538db8e39a17c9125184cd96ff60275e0d0/kotlin-osgi-bundle-1.1.2-5.jar:/Users/kirk/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.core/6.0.0/c49acdc9ac62cf69ee49cb6f1905b4fdb79ea5c/org.osgi.core-6.0.0.jar:/Users/kirk/.m2/repository/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar" />
+          <option name="classpath" value="" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="tornadofx-osgi-demo_main" />
@@ -35,9 +35,5 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: no.tornado:tornadofx:1.7.8-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-osgi-bundle:1.1.2-5" level="project" />
-    <orderEntry type="library" name="Gradle: org.osgi:org.osgi.core:6.0.0" level="project" />
-    <orderEntry type="library" name="Gradle: org.glassfish:javax.json:1.0.4" level="project" />
   </component>
 </module>
